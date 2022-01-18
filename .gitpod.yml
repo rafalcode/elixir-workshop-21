@@ -1,5 +1,7 @@
 tasks:
   - name: python installs
     init: |
+      sudo apt-get update
+      sudo apt-get install -y bowtie fastqc
       pip install --upgrade pip
       pip install -r requirements.txt
